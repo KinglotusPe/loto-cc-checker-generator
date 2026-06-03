@@ -2,7 +2,11 @@ import sys
 import asyncio
 import os
 import re
+import warnings
 from core import Luhn, CardGenerator, BinGenerator, AsyncCardChecker, ChkrApiChecker, DataParser, ProgressBar, logger
+
+# Ignorar advertencias de deprecación molestas del intérprete
+warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 # Asegurar compatibilidad asíncrona en Windows
 if sys.platform == 'win32':
