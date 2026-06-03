@@ -26,3 +26,6 @@ Thumbs.db
 tarjetas.log
 validas.txt
 tarjetas_generadas.txt
+
+# Backup files
+backup/
