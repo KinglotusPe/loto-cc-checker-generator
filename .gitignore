@@ -1,0 +1,28 @@
+# Python environments
+.venv/
+venv/
+ENV/
+env/
+*.pyc
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Local settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Project logs
+tarjetas.log
+validas.txt
+tarjetas_generadas.txt
