@@ -24,7 +24,11 @@ PURPLE = "\033[38;5;129m"
 PINK = "\033[38;5;201m"
 
 def clear_screen():
-    os.system('cls' if os.name == 'nt' else 'clear')
+    # En algunas terminales de VS Code, cls puede causar fallos de buffer de repetición si no se vacía la salida
+    if os.name == 'nt':
+        _ = os.system('cls')
+    else:
+        _ = os.system('clear')
 
 def print_banner():
     lotus = f"""
